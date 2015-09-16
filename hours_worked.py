@@ -9,9 +9,6 @@ def main(startTime, endTime):
 	endHour = int(endTime.split(":")[0])
 	endMinute = int(endTime.split(":")[1])
 	
-	if 1 <= endHour <= 11:
-		endHour = endHour + 12
-
 	start_time = datetime.datetime(date_now.year, date_now.month, date_now.day, startHour, startMinute, 00)
 	end_time = datetime.datetime(date_now.year, date_now.month, date_now.day, endHour, endMinute, 00)
 
